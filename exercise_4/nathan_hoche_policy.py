@@ -3,7 +3,7 @@ from agent import Agent
 
 CurrentMove = "left"
 
-def sln_policy(agent: Agent) -> str:
+def nathan_hoche_policy(agent: Agent) -> str:
     """
     Policy of the agent
     return "left", "right", or "none"

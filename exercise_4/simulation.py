@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from agent import Agent
-from sln_policy import sln_policy
+from nathan_hoche_policy import nathan_hoche_policy
 
 WORLD_SIZE = 8
 WORLD_UPDATE_PERIOD = 10
@@ -48,7 +48,7 @@ def run_simulation() -> list:
             # print(f"rewards: {rewards}\n")
 
         # choose action and move agent
-        action = sln_policy(agent)
+        action = nathan_hoche_policy(agent)
         agent.move(action, WORLD_SIZE)
         # print(f"move {action}")
         # print(f"position: {agent.position}")
